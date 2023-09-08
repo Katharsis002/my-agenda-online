@@ -42,22 +42,23 @@ export const TodoWrapper = () => {
 
   return (
     <div className="w-[90%] xl:w-[80%] mx-auto TodoWrapper">
-      <h1>Add your programs !</h1>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
-      {todos.map((todo) =>
-        todo.isEditing ? (
-          <EditTodoForm editTodo={editTask} task={todo} />
-        ) : (
-          <Todo
-            key={todo.id}
-            task={todo}
-            deleteTodo={deleteTodo}
-            editTodo={editTodo}
-            toggleComplete={toggleComplete}
-          />
-        )
-      )}
+      <div className="papapa h-[166px] overflow-y-scroll">
+        {todos.map((todo) =>
+          todo.isEditing ? (
+            <EditTodoForm editTodo={editTask} task={todo} />
+          ) : (
+            <Todo
+              key={todo.id}
+              task={todo}
+              deleteTodo={deleteTodo}
+              editTodo={editTodo}
+              toggleComplete={toggleComplete}
+            />
+          )
+        )}
+      </div>
     </div>
   );
 };

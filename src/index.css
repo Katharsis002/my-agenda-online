@@ -3,13 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --purple: #BEADFA;
-  --yellow: #FFF3DA;
+  --purple: #beadfa;
+  --yellow: #fff3da;
   --blue: #313866;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 4px;
 }
 
 body {
@@ -19,22 +29,11 @@ body {
 }
 
 .hr-solid {
-height: 2px ;
-background-color: black;
-  
+  height: 2px;
+  background-color: black;
 }
-
 
 /* Style the input */
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
 
 /* Style the "Add" button */
 /*.addBtn {
@@ -73,6 +72,3 @@ input {
   margin-bottom: 1rem;
   cursor: pointer;
 }*/
-
-
-

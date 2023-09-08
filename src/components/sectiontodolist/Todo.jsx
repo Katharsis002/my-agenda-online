@@ -4,7 +4,7 @@ import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 export const Todo = ({ task, deleteTodo, editTodo, toggleComplete }) => {
   return (
-    <div className="Todo flex justify-between items-center bg-[--blue] text-white p-2 rounded mb-2 mt-3 w-[100%] xl:w-[80%]">
+    <div className="Todo flex justify-between items-center bg-[--blue] text-white p-2 rounded mb-2 mt-3">
       <p
         className={`${task.completed ? "completed" : ""}`}
         onClick={() => toggleComplete(task.id)}
