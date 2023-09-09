@@ -23,7 +23,10 @@ export const TodoForm = ({ addTodo }) => {
           className="todo-input w-80 p-3"
           placeholder="What is the task today?"
         />
-        <button type="submit" className="todo-btn text-white bg-slate-600">
+        <button
+          type="submit"
+          className="todo-btn text-white bg-slate-600 px-3 "
+        >
           Add Task
         </button>
       </div>

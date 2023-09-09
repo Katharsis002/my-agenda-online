@@ -4,11 +4,14 @@ import Page from './components/Page';
 
 
 
+
 function App() {
   return (
     <div>
       <Navbar/>
       <Page/>
+      
+      
     
 
     </div>

@@ -10,16 +10,22 @@ export const EditTodoForm = ({ editTodo, task }) => {
     editTodo(value, task.id);
   };
   return (
-    <form onSubmit={handleSubmit} className="TodoForm">
+    <form
+      onSubmit={handleSubmit}
+      className="flex w-[90%] xl:w-[80%] mx-auto TodoForm "
+    >
       <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        className="todo-input"
+        className="py-3 todo-input"
         placeholder="Update task"
       />
-      <button type="submit" className="todo-btn">
-        Add Task
+      <button
+        type="submit"
+        className="todo-btn text-white bg-slate-600 px-3  todo-btn"
+      >
+        Edit Task
       </button>
     </form>
   );
